@@ -1,0 +1,44 @@
+{
+    "name": "jonatasfenske/paginator",
+    "description": "Paginação PHP 8.5 com suporte offset-based e cursor-based, templates Bootstrap/Tailwind e integração com APIs REST",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["php85", "pagination", "cursor-pagination", "infinite-scroll", "bootstrap", "tailwind"],
+    "homepage": "https://github.com/jonatasfenske/paginator",
+    "authors": [
+        {
+            "name": "Robson V. Leite",
+            "email": "cursos@upinside.com.br",
+            "role": "Original Author"
+        },
+        {
+            "name": "Jonatas Fenske",
+            "role": "PHP 8.5 Modernization"
+        }
+    ],
+    "require": {
+        "php": ">=8.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.0",
+        "phpstan/phpstan": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JonatasFenske\\Paginator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JonatasFenske\\Paginator\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "analyse": "phpstan analyse src tests --level=max"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
