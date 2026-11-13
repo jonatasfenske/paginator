@@ -231,19 +231,15 @@ class PaginatorTemplate
         $reflection = new \ReflectionClass($paginator);
 
         $linkProp = $reflection->getProperty('link');
-        $linkProp->setAccessible(true);
         $linkBase = $linkProp->getValue($paginator);
 
         $hashProp = $reflection->getProperty('hash');
-        $hashProp->setAccessible(true);
         $hash = $hashProp->getValue($paginator) ?? '';
 
         $paramsProp = $reflection->getProperty('params');
-        $paramsProp->setAccessible(true);
         $params = $paramsProp->getValue($paginator) ?? '';
 
         $titleProp = $reflection->getProperty('title');
-        $titleProp->setAccessible(true);
         $title = $titleProp->getValue($paginator) ?? 'Página';
 
         $label = "{$title} {$pageNum}";
@@ -278,19 +274,15 @@ class PaginatorTemplate
         $reflection = new \ReflectionClass($paginator);
 
         $linkProp = $reflection->getProperty('link');
-        $linkProp->setAccessible(true);
         $linkBase = $linkProp->getValue($paginator);
 
         $hashProp = $reflection->getProperty('hash');
-        $hashProp->setAccessible(true);
         $hash = $hashProp->getValue($paginator) ?? '';
 
         $paramsProp = $reflection->getProperty('params');
-        $paramsProp->setAccessible(true);
         $params = $paramsProp->getValue($paginator) ?? '';
 
         $titleProp = $reflection->getProperty('title');
-        $titleProp->setAccessible(true);
         $title = $titleProp->getValue($paginator) ?? 'Página';
 
         $label = "{$title} {$pageNum}";
